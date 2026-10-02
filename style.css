@@ -1,3 +1,8 @@
 body{
-    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyKMV9kHljD0XTzD5NctR4KQDHMDAOu3MlKupN6Jfmqg&s)
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyKMV9kHljD0XTzD5NctR4KQDHMDAOu3MlKupN6Jfmqg&s);
+    background-size: repeat;
+}
+p {
+    font-size: 125px;
+    color:aliceblue;
 }
