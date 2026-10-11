@@ -4,83 +4,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
+    <title>Sinat Activity</title>
 <script src="TUESDAY ACT.js"></script>
     <link rel="stylesheet" href="TUESDAY ACT.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=Press+Start+2P&display=swap" rel="stylesheet">
+
 </head>
 <body>
 
     <div class="page-wrapper">
-        <div class="contact-container">
-
-            <div class="contact-header">
-                <h1>Contact Us</h1>
-                <p>Have a question or concern? Send us a message.</p>
-            </div>
-
-            <form action="submit.php" method="POST" id="contactForm">
+    <div class="contact-container">
+    <div class="contact-header">
+                <h1>May Prublima ka ba?</h1>
+                <p>Magpadala ng mensahe sa amin!</p>
+  </div>
+ <form action="submit.php" method="POST" id="contactForm">
 
                 <div class="form-group">
-                    <label for="name">Full Name</label>
+                 <label for="name">Imong Pangalan</label>
+                <input type="text"
+                id="name"
+                name="name"
+                placeholder="Buong pangalan"
+                required>
+                </div>
+                <div class="form-group">
+                    <label for="address">San ka nakatira?</label>
                     <input
-                        type="text"
-                        id="name"
-                        name="name"
-                        placeholder="Enter your full name"
-                        required>
+                type="text"
+                id="address"
+                name="address"
+                placeholder="Adriss"
+                required>
                 </div>
 
-                <div class="form-group">
-                    <label for="address">Address</label>
-                    <input
-                        type="text"
-                        id="address"
-                        name="address"
-                        placeholder="Enter your address"
-                        required>
-                </div>
+
 
                 <div class="form-group">
-                    <label for="contact">Contact Number</label>
+                    <label for="contact">Kuntak No.</label>
                     <input
-                        type="tel"
-                        id="contact"
-                        name="contact"
-                        inputmode="numeric"
-                        pattern="[0-9]{7,15}"
-                        maxlength="15"
-                        placeholder="Enter 7 to 15 digits"
-                        required>
+                type="tel"
+                id="contact"
+                name="contact"
+                inputmode="numeric"
+                pattern="[0-9]{7,15}"
+                maxlength="15"
+                placeholder="7 to 15 digits lang"
+                required>
                 </div>
+
+
+
+
+
+
 
                 <div class="form-group">
                     <label for="email">Email Address</label>
                     <input
-                        type="email"
-                        id="email"
-                        name="email"
-                        placeholder="example@email.com"
-                        required>
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="AlgeonBatumbakal@email.com"
+                    required>
                 </div>
 
                 <div class="form-group">
-                    <label for="message">Message</label>
+                    <label for="message">Problema mo?</label>
                     <textarea
-                        id="message"
-                        name="message"
-                        rows="5"
-                        placeholder="Write your message here..."
-                        required></textarea>
+                id="message"
+                 name="message"
+             rows="5"
+            placeholder="Ibigay ang iyong problema..."
+            required></textarea>
                 </div>
-
                 <p id="notice" aria-live="polite"></p>
 
-                <button type="submit">Send Message</button>
-
-            </form>
-
-        </div>
-    </div>
-
+                <button type="submit">Ipadala ang Mensahe</button>
+</form>
+</div>
+</div>
 </body>
 </html>
