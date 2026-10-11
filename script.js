@@ -1,7 +1,7 @@
 
 function generateGreeting() {
     let name = document.getElementById("name").value.trim();
-    let ageInput = document.getElementById("age").value.trim();
+    let ageInput = document.getElementById("age").value;
     let age = Number(ageInput);
     let result = document.getElementById("result");
 
