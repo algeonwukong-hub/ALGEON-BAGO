@@ -1,13 +1,26 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bata pa ako ankol!</title>
     <link rel="stylesheet" href="style.css">
-    <title>Hi Landicho</title>
+    <script src="script.js" defer></script>
 </head>
 <body>
-   <P>WOIII!!!WALA MAONG KANIN BUSENG?!?</P> 
-    
+    <div class="container">
+        <h1>KAMUSTA KA BUSENG!</h1>
+        <p>Pangalan at Edad mo, buseng.</p>
+
+        <input type="text" id="name" placeholder="Imong pangalan">
+        <input type="number" id="age" placeholder="Imong edad" min="0">
+
+        <button onclick="generateGreeting()">I-sumite</button>
+
+        <div id="result"></div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
