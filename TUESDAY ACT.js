@@ -1,18 +1,32 @@
-const contactInput = document.getElementById("contact");
+
 const contactForm = document.getElementById("contactForm");
+const contactInput = document.getElementById("contact");
+const notice = document.getElementById("notice");
 
-contactInput.addEventListener("input", function () {
-    this.value = this.value.replace(/[^0-9]/g, "");
-});
+if (contactForm && contactInput && notice) {
 
-contactForm.addEventListener("submit", function (event) {
-    const contact = contactInput.value;
-    const notice = document.getElementById("notice");
+    contactInput.addEventListener("input", function () {
+        contactInput.value = contactInput.value
+            .replace(/[^0-9]/g, "")
+            .slice(0, 15);
 
-    if (!/^[0-9]{7,15}$/.test(contact)) {
-        event.preventDefault();
-        notice.textContent =
-            "Please enter 7 to 15 digits for your contact number.";
-        notice.style.color = "red";
-    }
-});
+        notice.textContent = "";
+    });
+
+    contactForm.addEventListener("submit", function (event) {
+        const contactNumber = contactInput.value;
+
+        if (!/^[0-9]{7,15}$/.test(contactNumber)) {
+            event.preventDefault();
+
+            notice.textContent =
+                "Enter a valid contact number with 7 to 15 digits.";
+
+            notice.style.color = "#dc2626";
+            contactInput.focus();
+        }
+    });
+
+} else {
+    console.error("Check the IDs in your HTML form.");
+}
